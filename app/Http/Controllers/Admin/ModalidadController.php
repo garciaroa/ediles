@@ -18,7 +18,7 @@ class ModalidadController extends Controller
     public function index()
     {
     
-        $titulo = array('pageTitle' => "Modalidad Contratación");
+        $titulo = array('pageTitle' => "Modalidad Contratacion");
         $results = array();
         $results["modalidades"]  = DB::table('modalidad')->paginate(5);
         
