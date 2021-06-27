@@ -55,7 +55,9 @@ Route::get('/adicionarBarrio',[BarrioController::class,'create']);
 Route::post('/adicionarNuevoBarrio',[BarrioController::class,'createNew']);
 Route::post('/todosbarrios',[BarrioController::class,'indexAjax']);
 
-Route::get('/listarModalidad',[ModalidadController::class,'index']);
+
+//Route::get('/listarModalidad',[ModalidadController::class,'index']);
+Route::get('/listarModalidad',[EscolaridadController::class,'index']);
 Route::get('/editarModalidad/{id}',[ModalidadController::class,'edit']);
 Route::post('/actualizarModalidad',[ModalidadController::class,'update']);
 Route::get('/adicionarModalidad',[ModalidadController::class,'create']);
