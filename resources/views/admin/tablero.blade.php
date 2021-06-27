@@ -195,6 +195,7 @@
 
 @section('js')
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js" ></script> 
 
 
 <script>
@@ -211,8 +212,8 @@ $(function(){
 //Chart.defaults.global.defaultFontSize = 18;
 //Chart.defaults.global.defaultFontColor = 'blue';
 
-var popCanvas = $("#popChart");
-var popCanvas = document.getElementById("popChart");
+/*var popCanvas = $("#popChart");
+var popCanvas = document.getElementById("popChart");*/
 var popCanvas = document.getElementById("popChart").getContext("2d");
 var barChart = new Chart(popCanvas, {
   type: 'bar',
