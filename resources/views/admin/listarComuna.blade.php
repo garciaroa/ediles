@@ -24,7 +24,7 @@
         <div class="box" >
           <div class="box-header" style="margin-bottom:1.5em;">
             <div class="box-tools float-right col-md-2" style="font-size: x-small;">
-            	<a href="adicionarComuna" type="button" class="btn btn-block btn-primary" style="font-size:1.5em">{{ trans('labels.Nuevocomuna') }}</a>
+            	<a href="adicionarComuna" type="button" class="btn btn-block btn-primary" style="font-size:1.5em">{{ trans('labels.Nuevacomuna') }}</a>
             </div>
             @if( count($results['comunas']) > 0 )
              <small> | {{ $results['comunas']->total() }} Registros | página {{ $results['comunas']->currentPage()}} de {{ $results['comunas']->lastPage()}}</small>

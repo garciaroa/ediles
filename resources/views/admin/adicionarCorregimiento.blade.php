@@ -7,11 +7,11 @@
 <div>
   <!-- Content Header (Page header) -->
   <section class="content-header" style="margin-top: -1em;">
-    <span style="font-size: 1.5em;"> {{ trans('labels.AddComuna') }}</span>
+    <span style="font-size: 1.5em;"> {{ trans('labels.AddCorregimiento') }}</span>
     <ol class="breadcrumb float-right font-italic">
       <li><a href="{{ URL::to('admin') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
       /<li><a href="{{ URL::to('/admin/listarCorregimiento/') }}"><i class="fa fa-dashboard"></i> Corregimientos</a></li>
-      /<li class="active">{{ trans('labels.nuevoCorregimiento') }}</li>
+      /<li class="active">{{ trans('labels.Nuevocorregimiento') }}</li>
     </ol>
   </section>
 
@@ -62,7 +62,7 @@
               <div class="col-md-2"></div>
                 <div class="col-md-6">
                   <div class="box-footer text-center">
-                    <button type="submit" class="btn btn-primary">Guardar Comuna</button-->
+                    <button type="submit" class="btn btn-primary">Guardar Comuna</button>
                     <a href="{{ URL::to('admin/listarCorregimiento')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
                   </div>                
                 </div>

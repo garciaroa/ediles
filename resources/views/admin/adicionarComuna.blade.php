@@ -10,7 +10,7 @@
     <span style="font-size: 1.5em;"> {{ trans('labels.AddComuna') }}</span>
     <ol class="breadcrumb float-right font-italic">
       <li><a href="{{ URL::to('admin') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      /<li><a href="{{ URL::to('/admin/listarComuna/') }}">Comunas</a></i>/<li class="active">{{ trans('labels.NuevaComuna') }}</li>
+      /<li><a href="{{ URL::to('/admin/listarComuna/') }}">Comunas</a></i>/<li class="active">{{ trans('labels.Nuevacomuna') }}</li>
     </ol>
   </section>
 
@@ -57,7 +57,7 @@
               <div class="col-md-2"></div>
                 <div class="col-md-6">
                   <div class="box-footer text-center">
-                    <button type="submit" class="btn btn-primary">Guardar Comuna</button-->
+                    <button type="submit" class="btn btn-primary">Guardar Comuna</button>
                     <a href="{{ URL::to('admin/listarComuna')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
                   </div>                
                 </div>

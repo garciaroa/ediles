@@ -10,7 +10,7 @@
     <span style="font-size: 1.5em;"> {{ trans('labels.AddModalidad') }}</span>
     <ol class="breadcrumb float-right font-italic">
       <li><a href="{{ URL::to('admin') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      /<li><a href="{{ URL::to('/admin/listarModalidad/') }}">modalidades</a></i>/<li class="active">{{ trans('labels.NuevoModalidad') }}</li>
+      /<li><a href="{{ URL::to('/admin/listarModalidad/') }}">modalidades</a></i>/<li class="active">{{ trans('labels.NuevaModalidad') }}</li>
     </ol>
   </section>
 
@@ -62,7 +62,7 @@
                     <textarea rows="7" cols="50" name="inputDescripcionModalidadD" class="form-control form-control-sm is-valid" id="inputDescripcionModalidadD"></textarea>
 
                     <div class="valid-feedback">
-                      Ingrese Descripcion del Nuevo modalidadZ!
+                      Ingrese Descripcion del Nuevo modalidad!
                     </div>
 
                   </div>

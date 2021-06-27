@@ -114,7 +114,7 @@
               <div class="col-md-2"></div>
                 <div class="col-md-6">
                   <div class="box-footer text-center">
-                    <button type="submit" class="btn btn-primary">Guardar Barrio</button-->
+                    <button type="submit" class="btn btn-primary">Guardar Barrio</button>
                     <a href="{{ URL::to('admin/listarBarrio')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
                   </div>                
                 </div>
