@@ -17,7 +17,7 @@ class ComunaController extends Controller
     {
         $titulo = array('pageTitle' => "Comuna");
         $results = array();
-        $results["comunas"]  = DB::table('Comuna')->paginate(5);
+        $results["comunas"]  = DB::table('comuna')->paginate(5);
         
         return view('admin.listarComuna',$titulo)->with(['results'=>$results]);
 
