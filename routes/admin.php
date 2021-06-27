@@ -8,14 +8,13 @@ use App\Http\Controllers\Admin\CorregimientoController;
 use App\Http\Controllers\Admin\BarrioController;
 use App\Http\Controllers\Admin\RolController;
 use App\Http\Controllers\Admin\EscolaridadController;
-use App\Http\Controllers\admin\ModalidadController;
-use App\Http\Controllers\admin\EstadoController;
+use App\Http\Controllers\Admin\ModalidadController;
+use App\Http\Controllers\Admin\EstadoController;
 
 Route::get('',[HomeController::class,'index']);
 Route::get('/editar/{id}',[HomeController::class,'edit']);
 
-Route::get('/listarEscolaridad',[ModalidadController::class,'index']);
-//Route::get('/listarEscolaridad',[EscolaridadController::class,'index']);
+Route::get('/listarEscolaridad',[EscolaridadController::class,'index']);
 Route::get('/adicionarEscolaridad',[EscolaridadController::class,'create']);
 Route::post('/adicionarNuevaEscolaridad',[EscolaridadController::class,'createNew']);
 Route::get('/editarEscolaridad/{id}',[EscolaridadController::class,'edit']);
@@ -57,8 +56,7 @@ Route::post('/adicionarNuevoBarrio',[BarrioController::class,'createNew']);
 Route::post('/todosbarrios',[BarrioController::class,'indexAjax']);
 
 
-//Route::get('/listarModalidad',[ModalidadController::class,'index']);
-Route::get('/listarModalidad',[EscolaridadController::class,'index']);
+Route::get('/listarModalidad',[ModalidadController::class,'index']);
 Route::get('/editarModalidad/{id}',[ModalidadController::class,'edit']);
 Route::post('/actualizarModalidad',[ModalidadController::class,'update']);
 Route::get('/adicionarModalidad',[ModalidadController::class,'create']);

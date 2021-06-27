@@ -15,16 +15,12 @@ class ModalidadController extends Controller
      */
     public function index()
     {
-        $titulo = array('pageTitle' => "Escolaridad");
-        $results = array();
-        $results["escolaridad"]  = DB::table('escolaridad')->paginate(5);
-        
-        return view('admin.listarEscolaridad',$titulo)->with(['results'=>$results]);
-      /*  $titulo = array('pageTitle' => "Modalidad Contratacion");
+       
+        $titulo = array('pageTitle' => "Modalidad Contratacion");
         $results = array();
         $results["modalidades"]  = DB::table('modalidad')->paginate(5);
         
-        return view('admin.listarModalidad',$titulo)->with(['results'=>$results]);*/
+        return view('admin.listarModalidad',$titulo)->with(['results'=>$results]);
 
     }
 
