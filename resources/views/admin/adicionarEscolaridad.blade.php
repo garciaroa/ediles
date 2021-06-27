@@ -80,8 +80,8 @@
 
 
 @section('css')
-<link rel="stylesheet" href="/css/admin_custom.css">
-<link rel="stylesheet" href="/css/mio.css">
+<!-- link rel="stylesheet" href="/css/admin_custom.css">
+<link rel="stylesheet" href="/css/mio.css"-->
 @stop
 
 @section('js')
