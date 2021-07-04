@@ -43,5 +43,11 @@ Route::group(['middleware' => ['jwt.verify']], function() {
     Route::get('genero','App\Http\Controllers\AppEdiles\AppSetingsController@getGenero');
 
     Route::post('obrasByComuna','App\Http\Controllers\AppEdiles\AppObrasController@getObrasByComuna');
+    Route::post('obrasByBarrio','App\Http\Controllers\AppEdiles\AppObrasController@getObrasByBarrio');
+    Route::post('obrasByVereda','App\Http\Controllers\AppEdiles\AppObrasController@getObrasByVereda');
+    Route::post('obrasByCorregimiento','App\Http\Controllers\AppEdiles\AppObrasController@getObrasByCorregimiento');
+
+
+    Route::post('votarObra','App\Http\Controllers\AppEdiles\AppObrasController@votarObra');
 
 });
