@@ -22,22 +22,26 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', 'App\Http\Controllers\AppEdiles\UserController@register');
 Route::post('login', 'App\Http\Controllers\AppEdiles\UserController@authenticate');
+Route::post('barrio','App\Http\Controllers\AppEdiles\AppBarrioController@getBarrio');
+Route::get('vereda','App\Http\Controllers\AppEdiles\AppVeredaController@getVereda');
+Route::get('comuna','App\Http\Controllers\AppEdiles\AppComunaController@getComuna');
+Route::get('corregimiento','App\Http\Controllers\AppEdiles\AppCorregimientoController@getCorregimiento');
 
 
 Route::group(['middleware' => ['jwt.verify']], function() {
 
     Route::post('user','App\Http\Controllers\AppEdiles\UserController@getAuthenticatedUser');
 
-    Route::get('comuna','App\Http\Controllers\AppEdiles\AppComunaController@getComuna');
+    
 
-
-    Route::get('corregimiento','App\Http\Controllers\AppEdiles\AppCorregimientoController@getCorregimiento');
-
-
-    Route::post('barrio','App\Http\Controllers\AppEdiles\AppBarrioController@getBarrio');
 
     
-    Route::post('vereda','App\Http\Controllers\AppEdiles\AppVeredaController@getVereda');
+
+
+    
+
+    
+    
 
 
     Route::get('genero','App\Http\Controllers\AppEdiles\AppSetingsController@getGenero');
